@@ -23,3 +23,10 @@ main {
   border-color: gray;
   border-radius: 0px;
 }
+.edit-pen {
+  font-size: 8px;
+  background-color: black;
+  padding-inline: 3px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
