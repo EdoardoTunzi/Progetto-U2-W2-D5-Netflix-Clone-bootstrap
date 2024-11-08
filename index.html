@@ -18,37 +18,49 @@
       <nav class="navbar navbar-expand">
         <div class="container-fluid">
           <img class="me-3" src="./assets/img/netflix_logo.png" height="40" alt="netflix logo" />
+          <!--navbar items mobile-->
+          <div class="dropdown d-md-none me-1">
+            <a
+              class="border-white bg-none dropdown-toggle dropdown-toggle text-white fs-5"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="bi bi-list"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">TV Shows</a></li>
+              <li><a class="dropdown-item" href="#">Movies</a></li>
+              <li><a class="dropdown-item" href="#">Recently Added</a></li>
+              <li><a class="dropdown-item" href="#">My List</a></li>
+            </ul>
+          </div>
 
+          <!-- navbar items desktop-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block small">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block small">
                 <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block small">
                 <a class="nav-link" href="#">Movies</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block small">
                 <a class="nav-link" href="#">Recently Added</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-md-block small">
                 <a class="nav-link" href="#">My List</a>
               </li>
             </ul>
             <div class="d-flex align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                />
-              </svg>
-              <span class="align-bottom mx-3">KIDS</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
-                />
-              </svg>
+              <span class="mx-1"><i class="bi bi-search"></i></span>
+              <span class="align-bottom d-none d-md-block mx-1 small">KIDS</span>
+              <span class="mx-1"><i class="bi bi-bell-fill"></i></span>
               <div class="btn-group">
                 <button type="button" class="btn dropdown-toggle pe-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                   <img src="./assets/img/avatar.png" alt="avatar logo" height="30" />
@@ -64,13 +76,13 @@
         </div>
       </nav>
     </header>
-    <main class="px-4">
-      <!--Categories-->
-      <div class="container-fluid d-flex justify-content-between align-items-center mb-2">
+    <main class="container-fluid mb-5">
+      <!--Categories bar -->
+      <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center mb-2">
         <div class="d-flex align-items-center gap-4">
           <h3>TV Shows</h3>
           <div class="dropdown">
-            <button class="border-white bg-dark dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</button>
+            <button class="border-white bg-black dropdown-toggle border small" type="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Romance</a></li>
@@ -81,74 +93,62 @@
             </ul>
           </div>
         </div>
-        <div id="img-box d-flex">
+        <div class="img-box d-flex small">
           <!--list img-->
-          <div class="d-inline border border-white p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
-              <path
-                fill-rule="evenodd"
-                d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </div>
+          <span class="border small py-1 px-2 m-0"><i class="bi bi-justify-left"></i></span>
           <!--grid img-->
-          <div class="d-inline border border-white p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
-              <path
-                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
-              />
-            </svg>
-          </div>
+          <span class="border small py-1 px-2 m-0"><i class="bi bi-grid"></i></span>
         </div>
       </div>
+
       <!--grid 1-->
       <div class="container-fluid mb-4">
         <h5>Trending Now</h5>
-        <div class="row gx-1">
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media0.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media1.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media2.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media3.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media4.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media5.webp" alt="" /></div>
+        <div class="row g-1">
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media0.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media1.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media2.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media3.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media4.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media5.webp" alt="" /></div>
         </div>
       </div>
       <!--grid 1-->
       <div class="container-fluid mb-4">
         <h5>Watch It Again</h5>
-        <div class="row gx-1">
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media6.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media7.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media8.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media9.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media10.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media11.jpg" alt="" /></div>
+        <div class="row g-1">
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media6.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media7.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media8.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media9.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media10.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media11.jpg" alt="" /></div>
         </div>
       </div>
       <!--grid 1-->
       <div class="container-fluid mb-4">
         <h5>New Releases</h5>
-        <div class="row gx-1">
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media12.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media13.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media14.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media15.jpg" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media16.webp" alt="" /></div>
-          <div class="col-2"><img class="img-fluid" src="./assets/img/media/media17.jpg" alt="" /></div>
+        <div class="row g-1">
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media12.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media13.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media14.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media15.jpg" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media16.webp" alt="" /></div>
+          <div class="col-6 col-sm-4 col-md-2"><img class="img-fluid" src="./assets/img/media/media17.jpg" alt="" /></div>
         </div>
       </div>
     </main>
     <!--Footer-->
-    <div class="container d-flex justify-content-center">
-      <footer class="py-5 mt-4">
+    <div class="container d-flex justify-content-center mt-5">
+      <footer class="mt-4">
         <div class="d-flex fs-3 gap-4 text-secondary">
-          <span><i class="bi bi-facebook"></i></span>
-          <span><i class="bi bi-instagram"></i></span>
-          <span><i class="bi bi-twitter"></i></span>
-          <span><i class="bi bi-youtube"></i></span>
+          <span class="small"><i class="bi bi-facebook"></i></span>
+          <span class="small"><i class="bi bi-twitter"></i></span>
+          <span class="small"><i class="bi bi-youtube"></i></span>
+          <span class="small"><i class="bi bi-instagram"></i></span>
         </div>
-        <div class="row gap-5">
-          <div class="col-6 col-md-2 mb-3">
+        <div class="row small gx-5 mt-3">
+          <div class="col-6 col-md-3 mb-3 small">
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Audio and Subtitles</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Media Center</a></li>
@@ -157,7 +157,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-3 mb-3 small">
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Audio Description</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Investor Relations</a></li>
@@ -165,7 +165,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-3 mb-3 small">
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Help Center</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Jobs</a></li>
@@ -173,7 +173,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-3 mb-3 small">
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Gift Cards</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Terms of Use</a></li>
@@ -181,8 +181,8 @@
             </ul>
           </div>
         </div>
-        <button class="btn btn-outline-secondary mb-2 rounded-0">Service Code</button>
-        <p class="f-6 text-secondary"><i class="bi bi-c-circle"></i> 1997-2019 Netflix, Inc.</p>
+        <button class="btn btn-outline-secondary mb-2 rounded-0 btn-sm">Service Code</button>
+        <p class="f-6 text-secondary small" style="font-size: 0.6rem"><i class="bi bi-c-circle small"></i> 1997-2019 Netflix, Inc.</p>
       </footer>
     </div>
     <script
