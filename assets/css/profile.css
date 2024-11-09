@@ -8,18 +8,17 @@ main {
 .profile-box {
   max-width: 31rem;
 }
-/* Cambia dimensioni */
+
 .form-check-input {
   width: 21px;
   height: 21px;
-  border-color: gray; /* Cambia il colore del bordo */
+  border-color: gray;
   border-radius: 0px;
   background-color: #141414;
 }
 
-/* Colore di sfondo e del bordo */
 .form-check-input:checked {
-  background-color: #141414; /* Cambia con il colore che preferisci */
+  background-color: #141414;
   border-color: gray;
   border-radius: 0px;
 }
